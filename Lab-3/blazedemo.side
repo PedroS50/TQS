@@ -1,0 +1,245 @@
+{
+  "id": "9a0aa981-d117-4169-8b4c-af06f85b7926",
+  "version": "2.0",
+  "name": "blazedemo",
+  "url": "https://blazedemo.com",
+  "tests": [{
+    "id": "d4a2f4e1-3104-49cb-b217-efd48a7297d8",
+    "name": "test_flight_purchase",
+    "commands": [{
+      "id": "0f463242-fc63-41e9-a819-a13a4479b6b9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52b3f480-ac39-4aa1-9838-fa3b67208af2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1389x789",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49daba28-7209-4db6-ba98-0720a9599a29",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=fromPort",
+      "targets": [
+        ["name=fromPort", "name"],
+        ["css=.form-inline:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='fromPort']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-105.5,-242"
+    }, {
+      "id": "c7d9f60d-fe98-44ca-8f68-d46e49180dc0",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=fromPort",
+      "targets": [
+        ["name=fromPort", "name"],
+        ["css=.form-inline:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='fromPort']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-105.5,-242"
+    }, {
+      "id": "52d69da6-106c-46ba-a6e5-0e239b0c4eaf",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=fromPort",
+      "targets": [
+        ["name=fromPort", "name"],
+        ["css=.form-inline:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='fromPort']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-105.5,-242"
+    }, {
+      "id": "71768f63-44f2-41e5-8b56-31eb7ee240eb",
+      "comment": "",
+      "command": "select",
+      "target": "name=toPort",
+      "targets": [],
+      "value": "label=London"
+    }, {
+      "id": "a6036a67-297c-46fd-8cd8-a65f25fa2b32",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=toPort",
+      "targets": [
+        ["name=toPort", "name"],
+        ["css=.form-inline:nth-child(4)", "css:finder"],
+        ["xpath=//select[@name='toPort']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-105.5,-342"
+    }, {
+      "id": "c1f7e048-a249-413d-b755-2223edd7750a",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=toPort",
+      "targets": [
+        ["name=toPort", "name"],
+        ["css=.form-inline:nth-child(4)", "css:finder"],
+        ["xpath=//select[@name='toPort']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-105.5,-342"
+    }, {
+      "id": "943c25af-29c2-4920-a855-8468dc4f1a4f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=toPort",
+      "targets": [
+        ["name=toPort", "name"],
+        ["css=.form-inline:nth-child(4)", "css:finder"],
+        ["xpath=//select[@name='toPort']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-105.5,-342"
+    }, {
+      "id": "f2e5767b-5490-4e06-912f-021eac325a3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Find Flights']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c78cafb4-2bc1-4324-9dfa-d5e546a0447f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Flights from Paris to London:')]", "xpath:innerText"]
+      ],
+      "value": "Flights from Paris to London:"
+    }, {
+      "id": "ab3e39ed-8870-4dea-a580-9aaf357f0336",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn",
+      "targets": [
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//input[@value='Choose This Flight'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a55412b-027a-46b2-94ac-52352828b431",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=inputName", "name"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e63930d-aca3-4707-830e-c49c17772333",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["name=inputName", "name"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Pedro Santos"
+    }, {
+      "id": "6dda3c21-af3b-4661-8941-f7aab8813963",
+      "comment": "",
+      "command": "click",
+      "target": "css=.control-group:nth-child(2) > .controls",
+      "targets": [
+        ["css=.control-group:nth-child(2) > .controls", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9bf291-6e00-465d-aac3-eb00ab68bd44",
+      "comment": "",
+      "command": "click",
+      "target": "id=creditCardNumber",
+      "targets": [
+        ["id=creditCardNumber", "id"],
+        ["name=creditCardNumber", "name"],
+        ["css=#creditCardNumber", "css:finder"],
+        ["xpath=//input[@id='creditCardNumber']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b556018-eda4-4384-a317-d4bf8a3ef6c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=creditCardNumber",
+      "targets": [
+        ["id=creditCardNumber", "id"],
+        ["name=creditCardNumber", "name"],
+        ["css=#creditCardNumber", "css:finder"],
+        ["xpath=//input[@id='creditCardNumber']", "xpath:attributes"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "123123123123"
+    }, {
+      "id": "1fe50c51-05e8-4b28-b30f-0e38acc70597",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Purchase Flight']", "xpath:attributes"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d408737-8806-410b-8c74-f3a0df9bf782",
+      "comment": "Verify purchase confirmation",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Thank you for your purchase today!')]", "xpath:innerText"]
+      ],
+      "value": "Thank you for your purchase today!"
+    }, {
+      "id": "49ae3118-2a51-40a5-aeef-7de62a7eaf7c",
+      "comment": "Verify title \"BlazeDemo Confirmation\" presence (Fail)",
+      "command": "verifyTitle",
+      "target": "BlazeDeo Confirmation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5538dee4-1a9f-417d-8dca-47ce4a686fd2",
+      "comment": "Verify title \"BlazeDemo Confirmation\" presence (Pass)",
+      "command": "verifyTitle",
+      "target": "BlazeDemo Confirmation",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4d09caff-c7de-4fc1-8266-2944a5da2a8b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d4a2f4e1-3104-49cb-b217-efd48a7297d8"]
+  }],
+  "urls": ["https://blazedemo.com/"],
+  "plugins": []
+}
