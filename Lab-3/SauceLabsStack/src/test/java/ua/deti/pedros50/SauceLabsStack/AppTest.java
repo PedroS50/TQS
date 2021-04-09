@@ -16,12 +16,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class AppTest
 {
-    WebDriver browser;
+    private WebDriver browser;
 
     @BeforeEach
     public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "/home/pedro/chromedriver_linux64/chromedriver");
         browser = new ChromeDriver();
-        
     }
 
     @AfterEach
@@ -30,10 +30,11 @@ public class AppTest
     }
 
     @Test
-    public void site_header_is_on_home_page() {      
+    public void site_header_is_on_home_page() { 
         browser.get("https://www.saucelabs.com"); 
+        browser.manage().window().maximize();
         WebElement href = browser.findElement(By.xpath("//a[@href='https://accounts.saucelabs.com/']"));        
-        
+
         assertTrue((href.isDisplayed()));
     }
 }
