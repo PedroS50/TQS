@@ -21,6 +21,7 @@ Analysis Results:
 
 ## Exercise 2
 ### a)
+2h7min.
 Technical debt is the amount of theoretical time it would take a programmer to fix all the code smells that are present in the project that was analyzed.
 
 ### b)
