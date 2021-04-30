@@ -10,13 +10,13 @@ User -> My Account -> Security, fill in name, generate token.
 Analysis Results:
 ![Alt text](Resources/EuromillionsAnalysis.png?raw=true "Euromillions Analysis")
 
-| Issue                 | Problem Description              | How to Solve                          |
-|----------------------:|----------------------------------|---------------------------------------|
-| Bug (Critical)        | Save and re-use "Random". | The "generator" variable should not be initialized inside the function, it should be global. |
-| Code Smell (Major x2) | Refactor the code in order to not assign to the loop counter from within the loop body. | Move 'i++' to the inside of the for loop definition. |   |
-| Code Smell (Major x7) | Replace the use of System.out with a logger. | Import java.util.logging and change System.out() to logger.log(). |
-| Code Smell (Major)    | Use assertEquals instead. | Replace use of assertTrue with assertEquals. |
-| Security Hotspot      | Using pseudorandom number generators (PRNGs) is security-sensitive, the generator may be a potential security threat. | Use a cryptographically strong random number generator (RNG) like "java.security.SecureRandom" in place of this PRNG.
+| Issue                      | Problem Description              | How to Solve                          |
+|---------------------------:|----------------------------------|---------------------------------------|
+| Bug (Critical)             | Save and re-use "Random". | The "generator" variable should not be initialized inside the function, it should be global. |
+| Code Smell (Major x2)      | Refactor the code in order to not assign to the loop counter from within the loop body. | Move 'i++' to the inside of the for loop definition. |   |
+| Code Smell (Major x7)      | Replace the use of System.out with a logger. | Import java.util.logging and change System.out() to logger.log(). |
+| Code Smell (Major)         | Use assertEquals instead. | Replace use of assertTrue with assertEquals. |
+| Security Hotspot           | Using pseudorandom number generators (PRNGs) is security-sensitive, the generator may be a potential security threat. | Use a cryptographically strong random number generator (RNG) like "java.security.SecureRandom" in place of this PRNG.
 
 
 ## Exercise 2
